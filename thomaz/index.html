@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>formulario</title>
+</head>
+<body>
+    <div id="sombra"></div>
+    <h1 id="h1">Formulário</h1>
+    <main class="main"> 
+        <form name="formal" action="script.js" method="post" id="formal">
+            <h1 id="hal">III Bimestre</h1>
+            <div id="aldiv">
+                <strong><p id="al1">Nome do aluno:</p></strong>
+                <input type="text" name="nameal" id="nameal">
+            </div>
+
+            <div id="aldiv2">
+                <strong><p id="al2">Disciplina:</p></strong>
+                <input type="text" name="disciplinaal" id="disciplinaal">
+            </div>
+            <input type="submit" value="Procurar" id="submital">
+        </form>
+
+        <form name="formpf" action="script.js" method="post" id="formpf">
+            <h1 id="hpf">III Bimestre</h1>
+            <div id="pf1">
+                <strong><p id="p1">Nome do professor:</p></strong>
+                <input type="text" name="namepf" id="namepf">
+                <strong><p id="p3">Disciplina:</p></strong>
+                <input type="text" name="disciplina" id="disciplina">
+            </div>
+
+            <div id="pf2">
+                <strong><p id="p2">Nome do aluno:</p></strong>
+                <input type="text" name="name" id="name">
+                <strong><p id="p4">Nota:</p></strong>
+                <input type="number" name="nota" id="nota" step="0.1" max="10" min="0">
+            </div>
+
+            <input type="submit" value="Enviar" id="submit">
+        </form>
+        
+        <div id="aluno">
+            <h1 id="x2"></h1>
+            <div class="row" id="row1">
+                <strong><p id="x12">Professor: </p></strong>
+                <strong><p id="x1" class="x"></p></strong>
+                <strong><p id="x42">Disciplina: </p></strong>
+                <strong><p id="x3" class="x"></p></strong>
+            </div>
+            <div class="row" id="row2">
+                <strong><p id="x22">III Bimestre:</p></strong>
+                <strong><p id="x5"></p></strong>
+                <strong><p id="x52">Nota: </p></strong>
+                <strong><p id="x4" class="x"></p></strong>
+            </div>
+            <button id="close" onclick="closer()">Cancelar</button>
+            <button id="confirmar">Confirmar</button>
+        </div>
+
+        <div id="pasta">
+            <h1 id="xpasta"></h1>
+            <img id="aproved" src="approved.png" alt="">
+            <img id="reproved" src="notapproved.png" alt="">
+        </div>
+        <div id="pastaverse"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
